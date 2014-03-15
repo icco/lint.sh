@@ -17,15 +17,29 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    ast (1.1.0)
     atomic (1.1.15)
     builder (3.1.4)
     i18n (0.6.9)
+    json (1.8.1)
     minitest (4.7.5)
     multi_json (1.9.0)
+    parser (2.1.7)
+      ast (~> 1.1)
+      slop (~> 3.4, >= 3.4.5)
     pg (0.17.1)
+    powerpack (0.0.9)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
+    rainbow (2.0.0)
+    rubocop (0.19.0)
+      json (>= 1.7.7, < 2)
+      parser (~> 2.1.7)
+      powerpack (~> 0.0.6)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.4)
+    ruby-progressbar (1.4.2)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -33,6 +47,7 @@ GEM
     sinatra-activerecord (1.4.0)
       activerecord (>= 3.0)
       sinatra (~> 1.0)
+    slop (3.5.0)
     thread_safe (0.2.0)
       atomic (>= 1.1.7, < 2)
     tilt (1.4.1)
@@ -44,5 +59,6 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   pg
+  rubocop
   sinatra
   sinatra-activerecord

@@ -1,6 +1,7 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "activerecord"
-gem "pg"
-gem "sinatra"
-gem "sinatra-activerecord"
+gem 'activerecord'
+gem 'pg'
+gem 'rubocop'
+gem 'sinatra'
+gem 'sinatra-activerecord'
