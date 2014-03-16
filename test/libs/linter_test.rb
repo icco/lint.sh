@@ -6,6 +6,10 @@ describe "Linter Lib" do
     refute_nil @linter
   end
 
+  it 'raises exception when no code' do
+    assert_raises(ArgumentError) { Linter.new.analyze }
+  end
+
   it 'can analyze some code' do
     @linter = Linter.new
     @linter.code = "[1, 2, 3].inject(:+)"
