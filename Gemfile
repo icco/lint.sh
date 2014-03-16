@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 # Run requirments
 gem 'activerecord', '>= 3.1', :require => 'active_record'
+gem 'delayed_job'
+gem 'delayed_job_active_record'
 gem 'erubis', '~> 2.7'
 gem 'oj'
 gem 'pg'
