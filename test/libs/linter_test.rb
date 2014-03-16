@@ -15,4 +15,12 @@ describe "Linter Lib" do
     @linter.code = "[1, 2, 3].inject(:+)"
     refute_nil @linter.analyze
   end
+
+  it 'has bad_style? return false if code is of correct style' do
+    @linter = Linter.new
+    @linter.code = "[1, 2, 3].inject(:+)"
+    @linter.analyze
+
+    assert_false @linter.bad_style?
+  end
 end

@@ -10,6 +10,11 @@ class Linter
       raise ArgumentError.new "You need to give the Linter code to Lint"
     end
 
-    parsed = Rubocop::SourceParser.parse(@code)
+    @offenses = Rubocop::SourceParser.parse(@code)
+  end
+
+  def bad_style?
+    p @offenses
+    @offenses.empty?
   end
 end
