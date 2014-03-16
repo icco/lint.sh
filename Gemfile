@@ -10,7 +10,6 @@ gem 'pg'
 gem 'rake'
 gem 'rubocop'
 gem 'sass'
-gem 'sqlite3'
 gem 'thin'
 
 # Test requirements
