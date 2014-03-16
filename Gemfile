@@ -1,19 +1,15 @@
 source 'https://rubygems.org'
 
-# Server requirements
-gem 'thin'
-
-# Optional JSON codec (faster performance)
-gem 'oj'
-
-# Project requirements
-gem 'rake'
-
-# Component requirements
-gem 'sass'
-gem 'erubis', '~> 2.7'
+# Run requirments
 gem 'activerecord', '>= 3.1', :require => 'active_record'
+gem 'erubis', '~> 2.7'
+gem 'oj'
+gem 'pg'
+gem 'rake'
+gem 'rubocop'
+gem 'sass'
 gem 'sqlite3'
+gem 'thin'
 
 # Test requirements
 gem 'minitest', '~> 2.6', :require => 'minitest/autorun', :group => 'test'
