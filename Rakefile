@@ -1,5 +1,8 @@
-require 'rake/testtask'
+require './dependencies'
 
-Rake::TestTask.new do |t|
-    t.test_files = FileList['tests/*.rb']
+Dir['./lib/tasks/*.rake'].each { |f| load f }
+
+task :default => :test
+task :test do
+  exec "rake features"
 end

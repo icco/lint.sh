@@ -1,2 +1,6 @@
-require './web'
-run Sinatra::Application
+require './dependencies'
+require './main'
+
+map '/' do
+  run Sinatra::Application
+end
