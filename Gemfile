@@ -13,7 +13,6 @@ gem 'sass'
 gem 'thin'
 
 # Test requirements
-gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'minitest', :require => 'minitest/autorun', :group => 'test'
 gem 'rack-test', :require => 'rack/test', :group => 'test'
 gem 'shotgun', :group => 'development'
