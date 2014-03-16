@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Run requirments
-gem 'activerecord', '>= 3.1', :require => 'active_record'
+gem 'activerecord', '~> 4', :require => 'active_record'
 gem 'delayed_job'
 gem 'delayed_job_active_record'
 gem 'erubis', '~> 2.7'
@@ -14,7 +14,7 @@ gem 'sqlite3'
 gem 'thin'
 
 # Test requirements
-gem 'minitest', '~> 2.6', :require => 'minitest/autorun', :group => 'test'
+gem 'minitest', :require => 'minitest/autorun', :group => 'test'
 gem 'rack-test', :require => 'rack/test', :group => 'test'
 gem 'shotgun', :group => 'development'
 
