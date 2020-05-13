@@ -10,12 +10,12 @@ gem 'pg'
 gem 'rake'
 gem 'rubocop'
 gem 'sass'
-gem 'thin'
+gem 'thin', '>= 1.6.2'
 
 # Test requirements
 gem 'minitest', :require => 'minitest/autorun', :group => 'test'
-gem 'rack-test', :require => 'rack/test', :group => 'test'
-gem 'shotgun', :group => 'development'
+gem 'rack-test', '>= 0.6.2', :require => 'rack/test', :group => 'test'
+gem 'shotgun', '>= 0.9', :group => 'development'
 
 # Padrino Stable Gem
-gem 'padrino', '~> 0.12'
+gem 'padrino', '~> 0.12', '>= 0.12.9'
